@@ -56,7 +56,8 @@ password=password
 host=0.0.0.0
 port=3000
 ```
-Note: SSL related issues are described [here](https://github.com/gdancik/lamp-rm/blob/main/troubleshooting/mysql.md).
+
+Note: MySQL is configured to use *mysql_native_password* as its default authentication. SSL related issues without this configuration are described [here](https://github.com/gdancik/lamp-rm/blob/main/troubleshooting/mysql.md).
 
 To run only mysql server, use
 ```
