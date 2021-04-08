@@ -44,6 +44,8 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: password 
     volumes:
         - ./mongo:/docker-entrypoint-initdb.d
+    ports:
+      - 2000:27017
 
   mongo-express:
     image: mongo-express
